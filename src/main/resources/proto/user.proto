@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_outer_classname = "UserProto";
+option java_package = "fr.eip.aura.udp.proto";
+
+message User {
+    string  type = 1;
+    int32   id = 2;
+    int32   doctor_id = 3;
+    string  firstname = 4;
+    string  lastname = 5;
+    string  gender = 6;
+    string  birthday_date = 7;
+}

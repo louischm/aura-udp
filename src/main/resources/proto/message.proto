@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_outer_classname = "MessageProto";
+option java_package = "fr.eip.aura.udp.proto";
+
+message Message {
+    string  type = 1;
+    int32   id = 2;
+    int64   timestamp = 3;
+    int32   user_id = 4;
+    string  text = 5;
+}

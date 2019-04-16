@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option java_outer_classname = "ScoreProto";
+option java_package = "fr.eip.aura.udp.proto";
+
+message Score {
+    string  type = 1;
+    int32   user_id = 2;
+    float   score = 3;
+}

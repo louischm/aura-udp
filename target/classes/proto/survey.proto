@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option java_outer_classname = "SurveyProto";
+option java_package = "fr.eip.aura.udp.proto";
+
+message SurveyQuestion {
+    int32   id = 1;
+    string  question = 2;
+    string  answer = 3;
+}
+
+message Survey {
+    string  type = 1;
+    int32   id = 2;
+    int32   user_id = 3;
+    repeated SurveyQuestion questions = 4;
+}
